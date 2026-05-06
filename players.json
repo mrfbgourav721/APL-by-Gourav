@@ -1,0 +1,92 @@
+[
+  {
+    "name": "MS Dhoni",
+    "country": "India",
+    "role": "Wicketkeeper Batter",
+    "teams": ["Chennai Super Kings", "Rising Pune Supergiant"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium",
+    "years_active": "2008-2024"
+  },
+  {
+    "name": "Virat Kohli",
+    "country": "India",
+    "role": "Top order Batter",
+    "teams": ["Royal Challengers Bengaluru"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium",
+    "years_active": "2008-2024"
+  },
+  {
+    "name": "Rohit Sharma",
+    "country": "India",
+    "role": "Top order Batter",
+    "teams": ["Deccan Chargers", "Mumbai Indians"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2008-2024"
+  },
+  {
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Mumbai Indians"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast",
+    "years_active": "2013-2024"
+  },
+  {
+    "name": "AB de Villiers",
+    "country": "South Africa",
+    "role": "Wicketkeeper Batter",
+    "teams": ["Delhi Daredevils", "Royal Challengers Bengaluru"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium",
+    "years_active": "2008-2021"
+  },
+  {
+    "name": "Chris Gayle",
+    "country": "West Indies",
+    "role": "Opening Batter",
+    "teams": ["Kolkata Knight Riders", "Royal Challengers Bengaluru", "Punjab Kings"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2009-2021"
+  },
+  {
+    "name": "Suresh Raina",
+    "country": "India",
+    "role": "Middle order Batter",
+    "teams": ["Chennai Super Kings", "Gujarat Lions"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2008-2021"
+  },
+  {
+    "name": "Lasith Malinga",
+    "country": "Sri Lanka",
+    "role": "Bowler",
+    "teams": ["Mumbai Indians"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast",
+    "years_active": "2009-2019"
+  },
+  {
+    "name": "Sunil Narine",
+    "country": "West Indies",
+    "role": "Bowling Allrounder",
+    "teams": ["Kolkata Knight Riders"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2012-2024"
+  },
+  {
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "role": "Bowling Allrounder",
+    "teams": ["Sunrisers Hyderabad", "Gujarat Titans"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Legbreak Googly",
+    "years_active": "2017-2024"
+  }
+]

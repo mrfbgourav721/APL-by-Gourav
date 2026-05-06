@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-[#04163e]/90 backdrop-blur-xl border border-blue-500/30 shadow-[0_8px_32px_rgba(0,0,0,0.7)];
+  }
+  
+  .ipl-blue-btn {
+    @apply bg-gradient-to-b from-[#0e2e7b] to-[#011440] border border-[#2d5dbd] text-white shadow-[0_4px_15px_rgba(0,0,0,0.5)];
+  }
+
+  .ipl-card {
+    @apply bg-gradient-to-b from-[#f8f9fa] to-[#e2e8f0] border-2 border-white rounded-3xl shadow-[0_15px_40px_rgba(0,0,0,0.6)];
+  }
+
+  .text-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.05); opacity: 0.3; }
+  100% { transform: scale(0.9); opacity: 0.7; }
+}
