@@ -98,10 +98,11 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     // Production static serving
-    const distPath = path.join(process.cwd(), "dist");
-    app.use(express.static(distPath));
-    app.get("*", (req, res) => {
-      res.sendFile(path.join(distPath, "index.html"));
+    app.use(express.static(path.join(process.cwd()))); 
+
+    // Send index.html for the root route
+    app.get('/', (req, res) => {
+      res.sendFile(path.join(process.cwd(), 'index.html'));
     });
   }
 
