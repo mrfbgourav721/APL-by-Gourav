@@ -19,7 +19,7 @@ const sessions = new Map<string, Session>();
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = process.env.PORT || 3000;
 
   app.use(express.json());
 
@@ -98,16 +98,14 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     // Production static serving
-    app.use(express.static(path.join(process.cwd()))); 
-
-    // Send index.html for the root route
-    app.get('/', (req, res) => {
-      res.sendFile(path.join(process.cwd(), 'index.html'));
+    app.use(express.static(path.join(__dirname, '.'))); 
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(__dirname, 'index.html'));
     });
   }
 
-  app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server is running on port ${PORT}`);
   });
 }
 
