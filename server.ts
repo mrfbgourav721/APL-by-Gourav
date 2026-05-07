@@ -97,17 +97,12 @@ async function startServer() {
     });
     app.use(vite.middlewares);
   } else {
-    // Production static serving
-    app.use((req, res, next) => {
-      if (req.url.endsWith('.ts') || req.url.endsWith('.tsx')) {
-        res.setHeader('Content-Type', 'application/javascript');
-      }
-      next();
-    });
-    
-    app.use(express.static(process.cwd())); 
+    // Sabse pehle static files set karo
+    app.use(express.static(process.cwd()));
+
+    // Ye Ensure karega ki index.html hamesha load ho
     app.get('*', (req, res) => {
-      res.sendFile(path.join(__dirname, 'index.html'));
+      res.sendFile(path.join(process.cwd(), 'index.html'));
     });
   }
 
