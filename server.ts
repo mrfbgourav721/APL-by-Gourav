@@ -98,7 +98,14 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     // Production static serving
-    app.use(express.static(path.join(__dirname, '.'))); 
+    app.use((req, res, next) => {
+      if (req.url.endsWith('.ts') || req.url.endsWith('.tsx')) {
+        res.setHeader('Content-Type', 'application/javascript');
+      }
+      next();
+    });
+    
+    app.use(express.static(process.cwd())); 
     app.get('*', (req, res) => {
       res.sendFile(path.join(__dirname, 'index.html'));
     });
