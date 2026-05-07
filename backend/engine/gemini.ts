@@ -1,6 +1,26 @@
+import fs from 'fs/promises';
+import path from 'path';
+
 // using native fetch available in Node >= 18
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+
+const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
+
+const CACHE_FILE = path.join(process.cwd(), 'cache.json');
+
+async function readCache(): Promise<Record<string, any>> {
+  try {
+    const data = await fs.readFile(CACHE_FILE, 'utf-8');
+    return JSON.parse(data);
+  } catch (err) {
+    return {};
+  }
+}
+
+async function writeCache(cache: Record<string, any>) {
+  await fs.writeFile(CACHE_FILE, JSON.stringify(cache, null, 2), 'utf-8');
+}
 
 interface HistoryItem {
   question: string;
@@ -8,11 +28,20 @@ interface HistoryItem {
 }
 
 async function callGemini(prompt: string) {
+  const cache = await readCache();
+  if (cache[prompt]) {
+    console.log("Using cached response for prompt");
+    return cache[prompt];
+  }
+
+  // Add a 1-second pause to stay under the RPM limit
+  await delay(1000); 
+
   if (!GEMINI_API_KEY) {
     throw new Error("GEMINI_API_KEY is not set");
   }
 
-  const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
+  const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${GEMINI_API_KEY}`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -29,23 +58,41 @@ async function callGemini(prompt: string) {
   if (!response.ok) {
     const errorText = await response.text();
     console.error("Gemini API Error:", errorText);
-    if (response.status === 429) {
-      throw new Error("API Rate Limit Exceeded: Please wait a few seconds and try again.");
-    }
-    throw new Error("Failed to call Gemini API");
+    const error: any = new Error(response.status === 429 ? "API Rate Limit Exceeded: Please wait a few seconds and try again." : "Failed to call Gemini API");
+    error.status = response.status;
+    throw error;
   }
 
   const data = await response.json() as any;
   let text = data.candidates[0].content.parts[0].text;
-  
+
   // Remove markdown code blocks if present
   text = text.replace(/^```json\n?/, "").replace(/```\n?$/, "").trim();
-  
+
   try {
-    return JSON.parse(text);
+    const result = JSON.parse(text);
+    const cache = await readCache();
+    cache[prompt] = result;
+    await writeCache(cache);
+    return result;
   } catch (error) {
     console.error("Failed to parse JSON:", text);
     throw error;
+  }
+}
+
+async function callGeminiWithRetry(prompt: string, retries = 3) {
+  for (let i = 0; i < retries; i++) {
+    try {
+      return await callGemini(prompt);
+    } catch (error: any) {
+      if (error.status === 429 && i < retries - 1) {
+        console.log(`Rate limit hit, retrying in ${i + 1}s...`);
+        await delay(2000 * (i + 1)); // Wait longer each time
+        continue;
+      }
+      throw error;
+    }
   }
 }
 
@@ -55,7 +102,7 @@ export const engine = {
 This is the very first question of the game. Ask a strategic Yes/No question to narrow down the pool of IPL players (e.g. asking about nationality, role, or a major team).
 Output JSON only with this schema: { "type": "question", "question": "Your question here?" }`;
 
-    const result = await callGemini(prompt);
+    const result = await callGeminiWithRetry(prompt);
     return result.question || "Does your player play for India?";
   },
 
@@ -68,7 +115,7 @@ ${historyText}
 Based on this history, make your absolute best guess for who the player is.
 Output JSON only with this schema: { "type": "guess", "guess": "Player Name", "confidence": 99 }`;
 
-    const result = await callGemini(prompt);
+    const result = await callGeminiWithRetry(prompt);
     return {
       guess: result.guess || "MS Dhoni",
       confidence: result.confidence || 90
@@ -91,7 +138,7 @@ Output JSON only with this schema:
 If asking a question: { "type": "question", "question": "Your question here?" }
 If guessing: { "type": "guess", "guess": "Player Name", "confidence": 98 }`;
 
-    const result = await callGemini(prompt);
+    const result = await callGeminiWithRetry(prompt);
     return result;
   }
 };
