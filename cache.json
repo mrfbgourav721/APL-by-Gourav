@@ -23,5 +23,9 @@
     "type": "guess",
     "guess": "Virat Kohli",
     "confidence": 99
+  },
+  "You are the IPL Akinator. You must guess the IPL cricket player (from 2008 to 2026) the user is thinking of.\nThe user has been answering your questions with \"yes\", \"no\", or \"unknown\".\nHere is the history of questions and answers:\nQ1: Is the player an Indian national? | A1: yes\nQ2: Does the player primarily play as a batter? | A2: no\n\nYou have asked 2 questions so far. You are allowed a maximum of 8 questions.\nBased on this history:\n1. If you are highly confident (>95%) about the player, OR if you have already asked 7 questions (meaning this would be the 8th and final question), you MUST output a final guess instead of asking another question.\n2. Otherwise, output the next best YES/NO question to narrow down the possibilities. Do not repeat previous questions. Make it strategic (e.g., about specific franchises, captaincy, left/right handed, bowler/batter).\n\nOutput JSON only with this schema:\nIf asking a question: { \"type\": \"question\", \"question\": \"Your question here?\" }\nIf guessing: { \"type\": \"guess\", \"guess\": \"Player Name\", \"confidence\": 98 }": {
+    "type": "question",
+    "question": "Does the player primarily bowl fast or medium pace?"
   }
 }
