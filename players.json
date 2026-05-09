@@ -88,5 +88,96 @@
     "batting_style": "Right hand Bat",
     "bowling_style": "Legbreak Googly",
     "years_active": "2017-2024"
+  },
+  {
+    "name": "Steve Smith",
+    "country": "Australia",
+    "role": "Middle order Batter",
+    "teams": ["Royal Challengers Bengaluru", "Kochi Tuskers Kerala", "Pune Warriors", "Rajasthan Royals", "Rising Pune Supergiant", "Delhi Capitals"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Legbreak",
+    "years_active": "2010-2024"
+  },
+  {
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "role": "Top order Batter",
+    "teams": ["Sunrisers Hyderabad", "Gujarat Titans"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2015-2024"
+  },
+  {
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "role": "Top order Batter",
+    "teams": ["Kings XI Punjab"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2016-2024"
+  },
+  {
+    "name": "Pat Cummins",
+    "country": "Australia",
+    "role": "Bowler",
+    "teams": ["Kolkata Knight Riders", "Delhi Daredevils", "Sunrisers Hyderabad"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast",
+    "years_active": "2014-2024"
+  },
+  {
+    "name": "Ben Stokes",
+    "country": "England",
+    "role": "Allrounder",
+    "teams": ["Rising Pune Supergiant", "Rajasthan Royals", "Chennai Super Kings"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Fast Medium",
+    "years_active": "2017-2023"
+  },
+  {
+    "name": "Shubman Gill",
+    "country": "India",
+    "role": "Opening Batter",
+    "teams": ["Kolkata Knight Riders", "Gujarat Titans"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2018-2024"
+  },
+  {
+    "name": "Hardik Pandya",
+    "country": "India",
+    "role": "Allrounder",
+    "teams": ["Mumbai Indians", "Gujarat Titans"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast Medium",
+    "years_active": "2015-2024"
+  },
+  {
+    "name": "Ravindra Jadeja",
+    "country": "India",
+    "role": "Allrounder",
+    "teams": ["Rajasthan Royals", "Kochi Tuskers Kerala", "Gujarat Lions", "Chennai Super Kings"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Slow Left arm Orthodox",
+    "years_active": "2008-2024"
+  },
+  {
+    "name": "Glenn Maxwell",
+    "country": "Australia",
+    "role": "Batting Allrounder",
+    "teams": ["Delhi Daredevils", "Mumbai Indians", "Kings XI Punjab", "Royal Challengers Bengaluru"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2012-2024"
+  },
+  {
+    "name": "Quinton de Kock",
+    "country": "South Africa",
+    "role": "Wicketkeeper Batter",
+    "teams": ["Sunrisers Hyderabad", "Delhi Daredevils", "Royal Challengers Bengaluru", "Mumbai Indians", "Lucknow Super Giants"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "N/A",
+    "years_active": "2013-2024"
   }
 ]
+
