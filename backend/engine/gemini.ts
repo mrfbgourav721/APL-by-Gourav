@@ -7,7 +7,7 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
 const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
 
-const CACHE_FILE = path.join(process.cwd(), 'cache.json');
+const CACHE_FILE = path.join(process.cwd(), 'data', 'cache.json');
 
 async function readCache(): Promise<Record<string, any>> {
   try {
@@ -20,6 +20,15 @@ async function readCache(): Promise<Record<string, any>> {
 
 async function writeCache(cache: Record<string, any>) {
   await fs.writeFile(CACHE_FILE, JSON.stringify(cache, null, 2), 'utf-8');
+}
+
+async function getPlayers(): Promise<any[]> {
+  try {
+    const data = await fs.readFile(path.join(process.cwd(), 'data', 'players.json'), 'utf-8');
+    return JSON.parse(data);
+  } catch (err) {
+    return [];
+  }
 }
 
 interface HistoryItem {
@@ -41,7 +50,7 @@ async function callGemini(prompt: string) {
     throw new Error("GEMINI_API_KEY is not set");
   }
 
-  const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${GEMINI_API_KEY}`, {
+  const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -98,22 +107,28 @@ async function callGeminiWithRetry(prompt: string, retries = 3) {
 
 export const engine = {
   async generateQuestion(history: HistoryItem[]): Promise<string> {
-    const prompt = `You are the IPL Akinator. You must guess the IPL cricket player (from 2008 to 2026) the user is thinking of.
-This is the very first question of the game. Ask a strategic Yes/No question to narrow down the pool of IPL players (e.g. asking about nationality, role, or a major team).
-Output JSON only with this schema: { "type": "question", "question": "Your question here?" }`;
+    const players = await getPlayers();
+    const playerNames = players.map(p => p.name).join(", ");
+    
+    const prompt = `You are the IPL Akinator. You must guess which IPL cricket player the user is thinking of from this specific list: [${playerNames}].
+This is the very first question of the game. Ask a strategic Yes/No question to narrow down this specific pool of players efficiently.
+You only have 8 questions total for the whole game.
+Output JSON only: { "type": "question", "question": "Your question here?" }`;
 
     const result = await callGeminiWithRetry(prompt);
     return result.question || "Does your player play for India?";
   },
 
   async makeGuess(history: HistoryItem[]): Promise<{ guess: string; confidence: number }> {
+    const players = await getPlayers();
     const historyText = history.map((h, i) => `Q${i + 1}: ${h.question} | A${i + 1}: ${h.answer}`).join("\n");
-    const prompt = `You are the IPL Akinator. You must guess the IPL cricket player (from 2008 to 2026) the user is thinking of.
-Here is the history of questions and the user's answers:
+    
+    const prompt = `You are the IPL Akinator. You must guess the player from this list: [${players.map(p => p.name).join(", ")}].
+History:
 ${historyText}
 
-Based on this history, make your absolute best guess for who the player is.
-Output JSON only with this schema: { "type": "guess", "guess": "Player Name", "confidence": 99 }`;
+Based on this, make your absolute best guess from the provided list.
+Output JSON only: { "type": "guess", "guess": "Player Name", "confidence": 99 }`;
 
     const result = await callGeminiWithRetry(prompt);
     return {
@@ -123,20 +138,23 @@ Output JSON only with this schema: { "type": "guess", "guess": "Player Name", "c
   },
 
   async processNextAction(history: HistoryItem[], questionCount: number): Promise<{ type: "question" | "guess", question?: string, guess?: string, confidence?: number }> {
+    const players = await getPlayers();
+    const playerNames = players.map(p => p.name).join(", ");
     const historyText = history.map((h, i) => `Q${i + 1}: ${h.question} | A${i + 1}: ${h.answer}`).join("\n");
-    const prompt = `You are the IPL Akinator. You must guess the IPL cricket player (from 2008 to 2026) the user is thinking of.
-The user has been answering your questions with "yes", "no", or "unknown".
-Here is the history of questions and answers:
+    
+    const prompt = `You are the IPL Akinator. You are narrowing down a player from this list: [${playerNames}].
+Current History:
 ${historyText}
 
-You have asked ${questionCount} questions so far. You are allowed a maximum of 8 questions.
-Based on this history:
-1. If you are highly confident (>95%) about the player, OR if you have already asked 7 questions (meaning this would be the 8th and final question), you MUST output a final guess instead of asking another question.
-2. Otherwise, output the next best YES/NO question to narrow down the possibilities. Do not repeat previous questions. Make it strategic (e.g., about specific franchises, captaincy, left/right handed, bowler/batter).
+Question Count: ${questionCount} / 8.
+Rules:
+1. If you are highly confident (>90%) OR if this is your 8th turn (questionCount is 7, meaning the next action MUST be a guess), you MUST output a guess.
+2. Otherwise, ask a strategic YES/NO question to further narrow down the provided list. Do not repeat questions.
+3. You MUST eventually guess a player that is in the provided list.
 
-Output JSON only with this schema:
-If asking a question: { "type": "question", "question": "Your question here?" }
-If guessing: { "type": "guess", "guess": "Player Name", "confidence": 98 }`;
+Output JSON only:
+If asking: { "type": "question", "question": "..." }
+If guessing: { "type": "guess", "guess": "...", "confidence": ... }`;
 
     const result = await callGeminiWithRetry(prompt);
     return result;
