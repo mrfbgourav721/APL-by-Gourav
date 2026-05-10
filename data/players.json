@@ -1,0 +1,920 @@
+[
+  {
+    "name": "MS Dhoni",
+    "country": "India",
+    "role": "Wicketkeeper Batter",
+    "teams": ["Chennai Super Kings", "Rising Pune Supergiant"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium",
+    "years_active": "2008-2026"
+  },
+  {
+    "name": "Virat Kohli",
+    "country": "India",
+    "role": "Top order Batter",
+    "teams": ["Royal Challengers Bengaluru"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium",
+    "years_active": "2008-2026"
+  },
+  {
+    "name": "Rohit Sharma",
+    "country": "India",
+    "role": "Top order Batter",
+    "teams": ["Deccan Chargers", "Mumbai Indians"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2008-2026"
+  },
+  {
+    "name": "Suresh Raina",
+    "country": "India",
+    "role": "Middle order Batter",
+    "teams": ["Chennai Super Kings", "Gujarat Lions"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2008-2021"
+  },
+  {
+    "name": "AB de Villiers",
+    "country": "South Africa",
+    "role": "Wicketkeeper Batter",
+    "teams": ["Delhi Daredevils", "Royal Challengers Bengaluru"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium",
+    "years_active": "2008-2021"
+  },
+  {
+    "name": "Chris Gayle",
+    "country": "West Indies",
+    "role": "Opening Batter",
+    "teams": ["Kolkata Knight Riders", "Royal Challengers Bengaluru", "Punjab Kings"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2009-2021"
+  },
+  {
+    "name": "David Warner",
+    "country": "Australia",
+    "role": "Opening Batter",
+    "teams": ["Delhi Daredevils", "Sunrisers Hyderabad", "Delhi Capitals"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Legbreak",
+    "years_active": "2009-2026"
+  },
+  {
+    "name": "Lasith Malinga",
+    "country": "Sri Lanka",
+    "role": "Bowler",
+    "teams": ["Mumbai Indians"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast",
+    "years_active": "2009-2019"
+  },
+  {
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Mumbai Indians"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast",
+    "years_active": "2013-2026"
+  },
+  {
+    "name": "Sunil Narine",
+    "country": "West Indies",
+    "role": "Bowling Allrounder",
+    "teams": ["Kolkata Knight Riders"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2012-2026"
+  },
+  {
+    "name": "Kieron Pollard",
+    "country": "West Indies",
+    "role": "Allrounder",
+    "teams": ["Mumbai Indians"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium",
+    "years_active": "2010-2022"
+  },
+  {
+    "name": "Dwayne Bravo",
+    "country": "West Indies",
+    "role": "Allrounder",
+    "teams": ["Mumbai Indians", "Chennai Super Kings", "Gujarat Lions"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium",
+    "years_active": "2008-2022"
+  },
+  {
+    "name": "Ravindra Jadeja",
+    "country": "India",
+    "role": "Allrounder",
+    "teams": ["Rajasthan Royals", "Kochi Tuskers Kerala", "Gujarat Lions", "Chennai Super Kings"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Slow Left arm Orthodox",
+    "years_active": "2008-2026"
+  },
+  {
+    "name": "Hardik Pandya",
+    "country": "India",
+    "role": "Allrounder",
+    "teams": ["Mumbai Indians", "Gujarat Titans"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast Medium",
+    "years_active": "2015-2026"
+  },
+  {
+    "name": "Andre Russell",
+    "country": "West Indies",
+    "role": "Allrounder",
+    "teams": ["Delhi Daredevils", "Kolkata Knight Riders"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast",
+    "years_active": "2012-2026"
+  },
+  {
+    "name": "Shane Watson",
+    "country": "Australia",
+    "role": "Allrounder",
+    "teams": ["Rajasthan Royals", "Royal Challengers Bengaluru", "Chennai Super Kings"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast Medium",
+    "years_active": "2008-2020"
+  },
+  {
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "role": "Bowling Allrounder",
+    "teams": ["Sunrisers Hyderabad", "Gujarat Titans"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Legbreak Googly",
+    "years_active": "2017-2026"
+  },
+  {
+    "name": "Gautam Gambhir",
+    "country": "India",
+    "role": "Opening Batter",
+    "teams": ["Delhi Daredevils", "Kolkata Knight Riders"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Legbreak",
+    "years_active": "2008-2018"
+  },
+  {
+    "name": "Shikhar Dhawan",
+    "country": "India",
+    "role": "Opening Batter",
+    "teams": ["Delhi Daredevils", "Mumbai Indians", "Deccan Chargers", "Sunrisers Hyderabad", "Punjab Kings"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2008-2024"
+  },
+  {
+    "name": "KL Rahul",
+    "country": "India",
+    "role": "Wicketkeeper Batter",
+    "teams": ["Royal Challengers Bengaluru", "Sunrisers Hyderabad", "Punjab Kings", "Lucknow Super Giants"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "N/A",
+    "years_active": "2013-2026"
+  },
+  {
+    "name": "Rishabh Pant",
+    "country": "India",
+    "role": "Wicketkeeper Batter",
+    "teams": ["Delhi Capitals"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "N/A",
+    "years_active": "2016-2026"
+  },
+  {
+    "name": "Jos Butler",
+    "country": "England",
+    "role": "Wicketkeeper Batter",
+    "teams": ["Mumbai Indians", "Rajasthan Royals"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "N/A",
+    "years_active": "2016-2026"
+  },
+  {
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "role": "Top order Batter",
+    "teams": ["Sunrisers Hyderabad", "Gujarat Titans"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2015-2026"
+  },
+  {
+    "name": "Yuzvendra Chahal",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Mumbai Indians", "Royal Challengers Bengaluru", "Rajasthan Royals"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Legbreak",
+    "years_active": "2013-2026"
+  },
+  {
+    "name": "Bhuvneshwar Kumar",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Pune Warriors", "Sunrisers Hyderabad"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium",
+    "years_active": "2011-2026"
+  },
+  {
+    "name": "Amit Mishra",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Delhi Daredevils", "Deccan Chargers", "Sunrisers Hyderabad", "Lucknow Super Giants"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Legbreak",
+    "years_active": "2008-2024"
+  },
+  {
+    "name": "Harbhajan Singh",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Mumbai Indians", "Chennai Super Kings", "Kolkata Knight Riders"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2008-2021"
+  },
+  {
+    "name": "Piyush Chawla",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Kings XI Punjab", "Kolkata Knight Riders", "Chennai Super Kings", "Mumbai Indians"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Legbreak",
+    "years_active": "2008-2026"
+  },
+  {
+    "name": "Ravichandran Ashwin",
+    "country": "India",
+    "role": "Bowling Allrounder",
+    "teams": ["Chennai Super Kings", "Rising Pune Supergiant", "Kings XI Punjab", "Delhi Capitals", "Rajasthan Royals"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2009-2026"
+  },
+  {
+    "name": "Dinesh Karthik",
+    "country": "India",
+    "role": "Wicketkeeper Batter",
+    "teams": ["Delhi Daredevils", "Kings XI Punjab", "Mumbai Indians", "Royal Challengers Bengaluru", "Gujarat Lions", "Kolkata Knight Riders"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "N/A",
+    "years_active": "2008-2024"
+  },
+  {
+    "name": "Robin Uthappa",
+    "country": "India",
+    "role": "Wicketkeeper Batter",
+    "teams": ["Mumbai Indians", "Royal Challengers Bengaluru", "Pune Warriors", "Kolkata Knight Riders", "Rajasthan Royals", "Chennai Super Kings"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium",
+    "years_active": "2008-2022"
+  },
+  {
+    "name": "Ambati Rayudu",
+    "country": "India",
+    "role": "Middle order Batter",
+    "teams": ["Mumbai Indians", "Chennai Super Kings"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2010-2023"
+  },
+  {
+    "name": "Ajinkya Rahane",
+    "country": "India",
+    "role": "Top order Batter",
+    "teams": ["Mumbai Indians", "Rajasthan Royals", "Rising Pune Supergiant", "Delhi Capitals", "Kolkata Knight Riders", "Chennai Super Kings"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "N/A",
+    "years_active": "2008-2026"
+  },
+  {
+    "name": "Manish Pandey",
+    "country": "India",
+    "role": "Middle order Batter",
+    "teams": ["Mumbai Indians", "Royal Challengers Bengaluru", "Pune Warriors", "Kolkata Knight Riders", "Sunrisers Hyderabad", "Lucknow Super Giants", "Delhi Capitals"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2008-2024"
+  },
+  {
+    "name": "Suryakumar Yadav",
+    "country": "India",
+    "role": "Batter",
+    "teams": ["Mumbai Indians", "Kolkata Knight Riders"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium",
+    "years_active": "2012-2026"
+  },
+  {
+    "name": "Sanju Samson",
+    "country": "India",
+    "role": "Wicketkeeper Batter",
+    "teams": ["Kolkata Knight Riders", "Rajasthan Royals", "Delhi Daredevils"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "N/A",
+    "years_active": "2013-2026"
+  },
+  {
+    "name": "Shubman Gill",
+    "country": "India",
+    "role": "Opening Batter",
+    "teams": ["Kolkata Knight Riders", "Gujarat Titans"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2018-2026"
+  },
+  {
+    "name": "Ishan Kishan",
+    "country": "India",
+    "role": "Wicketkeeper Batter",
+    "teams": ["Gujarat Lions", "Mumbai Indians"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "N/A",
+    "years_active": "2016-2026"
+  },
+  {
+    "name": "Yashasvi Jaiswal",
+    "country": "India",
+    "role": "Opening Batter",
+    "teams": ["Rajasthan Royals"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Legbreak",
+    "years_active": "2020-2026"
+  },
+  {
+    "name": "Ruturaj Gaikwad",
+    "country": "India",
+    "role": "Opening Batter",
+    "teams": ["Chennai Super Kings"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2020-2026"
+  },
+  {
+    "name": "Faf du Plessis",
+    "country": "South Africa",
+    "role": "Opening Batter",
+    "teams": ["Chennai Super Kings", "Rising Pune Supergiant", "Royal Challengers Bengaluru"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Legbreak",
+    "years_active": "2012-2026"
+  },
+  {
+    "name": "Quinton de Kock",
+    "country": "South Africa",
+    "role": "Wicketkeeper Batter",
+    "teams": ["Sunrisers Hyderabad", "Delhi Daredevils", "Royal Challengers Bengaluru", "Mumbai Indians", "Lucknow Super Giants"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "N/A",
+    "years_active": "2013-2026"
+  },
+  {
+    "name": "David Miller",
+    "country": "South Africa",
+    "role": "Middle order Batter",
+    "teams": ["Kings XI Punjab", "Rajasthan Royals", "Gujarat Titans"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2012-2026"
+  },
+  {
+    "name": "Kagiso Rabada",
+    "country": "South Africa",
+    "role": "Bowler",
+    "teams": ["Delhi Capitals", "Punjab Kings"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Fast",
+    "years_active": "2017-2026"
+  },
+  {
+    "name": "Dale Steyn",
+    "country": "South Africa",
+    "role": "Bowler",
+    "teams": ["Royal Challengers Bengaluru", "Deccan Chargers", "Sunrisers Hyderabad", "Gujarat Lions"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast",
+    "years_active": "2008-2020"
+  },
+  {
+    "name": "Jacques Kallis",
+    "country": "South Africa",
+    "role": "Allrounder",
+    "teams": ["Royal Challengers Bengaluru", "Kolkata Knight Riders"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast Medium",
+    "years_active": "2008-2014"
+  },
+  {
+    "name": "Brendon McCullum",
+    "country": "New Zealand",
+    "role": "Opening Batter",
+    "teams": ["Kolkata Knight Riders", "Kochi Tuskers Kerala", "Chennai Super Kings", "Gujarat Lions", "Royal Challengers Bengaluru"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium",
+    "years_active": "2008-2018"
+  },
+  {
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "role": "Bowler",
+    "teams": ["Sunrisers Hyderabad", "Kolkata Knight Riders", "Delhi Capitals", "Mumbai Indians", "Rajasthan Royals"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Left arm Fast Medium",
+    "years_active": "2015-2026"
+  },
+  {
+    "name": "Shane Warne",
+    "country": "Australia",
+    "role": "Bowler",
+    "teams": ["Rajasthan Royals"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Legbreak",
+    "years_active": "2008-2011"
+  },
+  {
+    "name": "Adam Gilchrist",
+    "country": "Australia",
+    "role": "Wicketkeeper Batter",
+    "teams": ["Deccan Chargers", "Kings XI Punjab"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2008-2013"
+  },
+  {
+    "name": "Glenn Maxwell",
+    "country": "Australia",
+    "role": "Batting Allrounder",
+    "teams": ["Delhi Daredevils", "Mumbai Indians", "Kings XI Punjab", "Royal Challengers Bengaluru"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2012-2026"
+  },
+  {
+    "name": "Mitchell Starc",
+    "country": "Australia",
+    "role": "Bowler",
+    "teams": ["Royal Challengers Bengaluru", "Kolkata Knight Riders"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Left arm Fast",
+    "years_active": "2014-2026"
+  },
+  {
+    "name": "Pat Cummins",
+    "country": "Australia",
+    "role": "Bowler",
+    "teams": ["Kolkata Knight Riders", "Delhi Daredevils", "Sunrisers Hyderabad"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast",
+    "years_active": "2014-2026"
+  },
+  {
+    "name": "Steve Smith",
+    "country": "Australia",
+    "role": "Batter",
+    "teams": ["Royal Challengers Bengaluru", "Kochi Tuskers Kerala", "Pune Warriors", "Rajasthan Royals", "Rising Pune Supergiant", "Delhi Capitals"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Legbreak",
+    "years_active": "2012-2024"
+  },
+  {
+    "name": "Marcus Stoinis",
+    "country": "Australia",
+    "role": "Allrounder",
+    "teams": ["Kings XI Punjab", "Royal Challengers Bengaluru", "Delhi Capitals", "Lucknow Super Giants"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium",
+    "years_active": "2016-2026"
+  },
+  {
+    "name": "Ben Stokes",
+    "country": "England",
+    "role": "Allrounder",
+    "teams": ["Rising Pune Supergiant", "Rajasthan Royals", "Chennai Super Kings"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Fast Medium",
+    "years_active": "2017-2023"
+  },
+  {
+    "name": "Moeen Ali",
+    "country": "England",
+    "role": "Allrounder",
+    "teams": ["Royal Challengers Bengaluru", "Chennai Super Kings"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2018-2025"
+  },
+  {
+    "name": "Sam Curran",
+    "country": "England",
+    "role": "Allrounder",
+    "teams": ["Kings XI Punjab", "Chennai Super Kings", "Punjab Kings"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Left arm Fast Medium",
+    "years_active": "2019-2026"
+  },
+  {
+    "name": "Liam Livingstone",
+    "country": "England",
+    "role": "Allrounder",
+    "teams": ["Rajasthan Royals", "Punjab Kings"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Legbreak/Offbreak",
+    "years_active": "2019-2026"
+  },
+  {
+    "name": "Nicholas Pooran",
+    "country": "West Indies",
+    "role": "Wicketkeeper Batter",
+    "teams": ["Mumbai Indians", "Punjab Kings", "Sunrisers Hyderabad", "Lucknow Super Giants"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "N/A",
+    "years_active": "2019-2026"
+  },
+  {
+    "name": "Shimron Hetmyer",
+    "country": "West Indies",
+    "role": "Middle order Batter",
+    "teams": ["Royal Challengers Bengaluru", "Delhi Capitals", "Rajasthan Royals"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "N/A",
+    "years_active": "2019-2026"
+  },
+  {
+    "name": "Yusuf Pathan",
+    "country": "India",
+    "role": "Allrounder",
+    "teams": ["Rajasthan Royals", "Kolkata Knight Riders", "Sunrisers Hyderabad"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2008-2019"
+  },
+  {
+    "name": "Irfan Pathan",
+    "country": "India",
+    "role": "Allrounder",
+    "teams": ["Kings XI Punjab", "Delhi Daredevils", "Sunrisers Hyderabad", "Chennai Super Kings", "Rising Pune Supergiant", "Gujarat Lions"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Left arm Medium Fast",
+    "years_active": "2008-2017"
+  },
+  {
+    "name": "Zaheer Khan",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Royal Challengers Bengaluru", "Mumbai Indians", "Delhi Daredevils"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Left arm Fast Medium",
+    "years_active": "2008-2017"
+  },
+  {
+    "name": "Ashish Nehra",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Mumbai Indians", "Delhi Daredevils", "Pune Warriors", "Chennai Super Kings", "Sunrisers Hyderabad"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Left arm Medium Fast",
+    "years_active": "2008-2017"
+  },
+  {
+    "name": "Munaf Patel",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Rajasthan Royals", "Mumbai Indians", "Gujarat Lions"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium Fast",
+    "years_active": "2008-2017"
+  },
+  {
+    "name": "RP Singh",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Deccan Chargers", "Kochi Tuskers Kerala", "Mumbai Indians", "Royal Challengers Bengaluru", "Rising Pune Supergiant"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Left arm Fast Medium",
+    "years_active": "2008-2016"
+  },
+  {
+    "name": "Pragyan Ojha",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Deccan Chargers", "Mumbai Indians"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Slow Left arm Orthodox",
+    "years_active": "2008-2015"
+  },
+  {
+    "name": "Murali Vijay",
+    "country": "India",
+    "role": "Opening Batter",
+    "teams": ["Chennai Super Kings", "Delhi Daredevils", "Kings XI Punjab"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2009-2020"
+  },
+  {
+    "name": "Deepak Hooda",
+    "country": "India",
+    "role": "Allrounder",
+    "teams": ["Rajasthan Royals", "Sunrisers Hyderabad", "Kings XI Punjab", "Lucknow Super Giants"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2015-2026"
+  },
+  {
+    "name": "Krunal Pandya",
+    "country": "India",
+    "role": "Allrounder",
+    "teams": ["Mumbai Indians", "Lucknow Super Giants"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Slow Left arm Orthodox",
+    "years_active": "2016-2026"
+  },
+  {
+    "name": "Axar Patel",
+    "country": "India",
+    "role": "Allrounder",
+    "teams": ["Kings XI Punjab", "Delhi Capitals"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Slow Left arm Orthodox",
+    "years_active": "2014-2026"
+  },
+  {
+    "name": "Washington Sundar",
+    "country": "India",
+    "role": "Allrounder",
+    "teams": ["Rising Pune Supergiant", "Royal Challengers Bengaluru", "Sunrisers Hyderabad"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2017-2026"
+  },
+  {
+    "name": "Shardul Thakur",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Kings XI Punjab", "Rising Pune Supergiant", "Chennai Super Kings", "Delhi Capitals", "Kolkata Knight Riders"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium Fast",
+    "years_active": "2015-2026"
+  },
+  {
+    "name": "Deepak Chahar",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Rising Pune Supergiant", "Chennai Super Kings"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium",
+    "years_active": "2016-2026"
+  },
+  {
+    "name": "Mohammed Siraj",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Sunrisers Hyderabad", "Royal Challengers Bengaluru"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast",
+    "years_active": "2017-2026"
+  },
+  {
+    "name": "Arshdeep Singh",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Punjab Kings"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Left arm Medium Fast",
+    "years_active": "2019-2026"
+  },
+  {
+    "name": "Kuldeep Yadav",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Mumbai Indians", "Kolkata Knight Riders", "Delhi Capitals"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Left arm Wrist Spin",
+    "years_active": "2014-2026"
+  },
+  {
+    "name": "Varun Chakaravarthy",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Kings XI Punjab", "Kolkata Knight Riders"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Legbreak",
+    "years_active": "2019-2026"
+  },
+  {
+    "name": "Umesh Yadav",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Delhi Daredevils", "Kolkata Knight Riders", "Royal Challengers Bengaluru", "Gujarat Titans"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast",
+    "years_active": "2010-2026"
+  },
+  {
+    "name": "Ishant Sharma",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Kolkata Knight Riders", "Deccan Chargers", "Sunrisers Hyderabad", "Rising Pune Supergiant", "Kings XI Punjab", "Delhi Capitals"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast Medium",
+    "years_active": "2008-2025"
+  },
+  {
+    "name": "Mohit Sharma",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Chennai Super Kings", "Kings XI Punjab", "Delhi Capitals", "Gujarat Titans"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium",
+    "years_active": "2013-2026"
+  },
+  {
+    "name": "Sandeep Sharma",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Kings XI Punjab", "Sunrisers Hyderabad", "Rajasthan Royals"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium",
+    "years_active": "2013-2026"
+  },
+  {
+    "name": "Rahul Tewatia",
+    "country": "India",
+    "role": "Allrounder",
+    "teams": ["Rajasthan Royals", "Kings XI Punjab", "Delhi Capitals", "Gujarat Titans"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Legbreak",
+    "years_active": "2014-2026"
+  },
+  {
+    "name": "Rinku Singh",
+    "country": "India",
+    "role": "Middle order Batter",
+    "teams": ["Kings XI Punjab", "Kolkata Knight Riders"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2018-2026"
+  },
+  {
+    "name": "Virender Sehwag",
+    "country": "India",
+    "role": "Opening Batter",
+    "teams": ["Delhi Daredevils", "Kings XI Punjab"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2008-2015"
+  },
+  {
+    "name": "Sourav Ganguly",
+    "country": "India",
+    "role": "Top order Batter",
+    "teams": ["Kolkata Knight Riders", "Pune Warriors"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Medium",
+    "years_active": "2008-2012"
+  },
+  {
+    "name": "Sachin Tendulkar",
+    "country": "India",
+    "role": "Opening Batter",
+    "teams": ["Mumbai Indians"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak/Legbreak",
+    "years_active": "2008-2013"
+  },
+  {
+    "name": "Rahul Dravid",
+    "country": "India",
+    "role": "Top order Batter",
+    "teams": ["Royal Challengers Bengaluru", "Rajasthan Royals"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2008-2013"
+  },
+  {
+    "name": "VVS Laxman",
+    "country": "India",
+    "role": "Top order Batter",
+    "teams": ["Deccan Chargers", "Kochi Tuskers Kerala"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2008-2011"
+  },
+  {
+    "name": "Anil Kumble",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Royal Challengers Bengaluru"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Legbreak",
+    "years_active": "2008-2010"
+  },
+  {
+    "name": "Harshal Patel",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Royal Challengers Bengaluru", "Delhi Capitals", "Punjab Kings"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Medium Fast",
+    "years_active": "2012-2026"
+  },
+  {
+    "name": "Avesh Khan",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Royal Challengers Bengaluru", "Delhi Capitals", "Lucknow Super Giants", "Rajasthan Royals"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast",
+    "years_active": "2017-2026"
+  },
+  {
+    "name": "Prithvi Shaw",
+    "country": "India",
+    "role": "Opening Batter",
+    "teams": ["Delhi Capitals"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2018-2026"
+  },
+  {
+    "name": "Devdutt Padikkal",
+    "country": "India",
+    "role": "Top order Batter",
+    "teams": ["Royal Challengers Bengaluru", "Rajasthan Royals", "Lucknow Super Giants"],
+    "batting_style": "Left hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2019-2026"
+  },
+  {
+    "name": "Ravi Bishnoi",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Kings XI Punjab", "Lucknow Super Giants"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Legbreak",
+    "years_active": "2020-2026"
+  },
+  {
+    "name": "Umran Malik",
+    "country": "India",
+    "role": "Bowler",
+    "teams": ["Sunrisers Hyderabad"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast",
+    "years_active": "2021-2026"
+  },
+  {
+    "name": "Cameron Green",
+    "country": "Australia",
+    "role": "Allrounder",
+    "teams": ["Mumbai Indians", "Royal Challengers Bengaluru"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast Medium",
+    "years_active": "2023-2026"
+  },
+  {
+    "name": "Tim David",
+    "country": "Australia",
+    "role": "Middle order Batter",
+    "teams": ["Royal Challengers Bengaluru", "Mumbai Indians"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2021-2026"
+  },
+  {
+    "name": "Wanindu Hasaranga",
+    "country": "Sri Lanka",
+    "role": "Bowling Allrounder",
+    "teams": ["Royal Challengers Bengaluru", "Sunrisers Hyderabad"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Legbreak",
+    "years_active": "2021-2026"
+  },
+  {
+    "name": "Matheesha Pathirana",
+    "country": "Sri Lanka",
+    "role": "Bowler",
+    "teams": ["Chennai Super Kings"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Fast",
+    "years_active": "2022-2026"
+  },
+  {
+    "name": "Maheesh Theekshana",
+    "country": "Sri Lanka",
+    "role": "Bowler",
+    "teams": ["Chennai Super Kings"],
+    "batting_style": "Right hand Bat",
+    "bowling_style": "Right arm Offbreak",
+    "years_active": "2022-2026"
+  }
+]

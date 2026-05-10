@@ -72,7 +72,7 @@ export async function scrapePlayers() {
       });
 
     // Save to players.json
-    const outPath = path.join(process.cwd(), "players.json");
+    const outPath = path.join(process.cwd(), "data", "players.json");
     fs.writeFileSync(outPath, JSON.stringify(uniquePlayers, null, 2));
     console.log(`Saved ${uniquePlayers.length} players to ${outPath}`);
 
